@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class largest {
 public static void main(String[] args) {
@@ -7,17 +8,12 @@ public static void main(String[] args) {
 	int i,temp=0;
 	Scanner in=new Scanner(System.in);
 	a=in.nextInt();
-	int arr[]=new int[a];
+	int[] arr=new int[a];
 	for(i=0;i<a;i++){
 		arr[i]=in.nextInt();
 	}
-	for( i=0;i<a;i++){
-		max=arr[0];
-			if(arr[i]>max){
-				max=arr[i];
-				temp=max;
-			}
-		}
-	System.out.print(temp);}
+	Arrays.sort(arr);
+	System.out.println(arr[a-1]);
+	}
 }
 
