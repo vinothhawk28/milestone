@@ -10,8 +10,10 @@ public static void main(String[] args) {
 	for(int i=0;i<t.length;i++){
 		c=t[i];
 	
-	String r=c.substring(0,1);
-	String n=r.toUpperCase()+c.substring(1);
+	String r=c.toLowerCase();
+	String p=r.substring(0,1);
+	String n=p.toUpperCase()+r.substring(1);
 	System.out.print(n+" ");
 }}
 }
+
